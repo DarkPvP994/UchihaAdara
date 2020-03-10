@@ -66,7 +66,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 
 
 const adminprefix = "/";
-const devs = ['493005382437044234'];
+const devs = ['476188949291991060'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -230,7 +230,7 @@ client.on('message', message => {
 if (message.content === '/help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
-      .addField("** مبرمج البوت :wrench: **","**DragonBoyYTD#6724 **")
+      .addField("** مبرمج البوت :wrench: **","**DarkPvP#3334 **")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
     }
@@ -270,7 +270,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "Dragon"
+          text: "DarkPvP#3334"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -279,7 +279,7 @@ client.on("message", message => {
 });
 
 client.on('ready',  () => {
-  console.log('By : DragonBoy');
+  console.log('By : DarkPvP#3334');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
@@ -527,7 +527,7 @@ client.on('message', msg => {
           maxAge: 86400
         }).then(i => msg.channel.send(`
         **
-        Invite Link : <https://discord.gg/${i.code}>
+        Invite Link : <None>
         Server : ${g.name} | Id : ${g.id} 
         Owner ID : ${g.owner.id}
         **
@@ -551,7 +551,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('/Msr')){
- if (message.author.id !== '344487452200796160') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if (message.author.id !== '476188949291991060') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -659,7 +659,6 @@ const x5bz4 = [
    '*** مريم : ماذا تريد ان تسمع ***',
    '*** مريم : اضغط على الرابط اهداء مني لك | https://www.youtube.com/watch?v=hvSiuQccmtg ***',
    '*** احد ما خرج من المنزل ***',
-   '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدنا في نشر البوت وادخل هذا السيرفر https://discord.gg/dqVFqrN ***'
 ]
  client.on('message', message => {
  if (message.content.startsWith('/مريم')) {
@@ -756,7 +755,7 @@ client.on("message", message => {
  if (message.content === "/help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
+      .setFooter('©جميع الحقوق محفوظة لبوت اوتشيها')
       .setFooter('اوامر الادمنيه')
 	  .addField('/bc', `لخاصية البرودكستات`)
       .setFooter('======================================================')
@@ -802,8 +801,8 @@ client.on("message", message => {
  if (message.content === "/invite") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-      .addField('شكرا لك لاستخدامك ل دراجون بوت', `https://discordapp.com/api/oauth2/authorize?client_id=470475174219743234&permissions=8&scope=bot`)
+      .setFooter('©جميع الحقوق محفوظة لــبوت اوتشيها')
+      .addField('شكرا لك لاستخدامك اوتشيها بوت', `None`)
   message.author.send({embed});
 
  }
@@ -846,8 +845,8 @@ client.on("message", message => {
  if (message.content === "/support") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© DragonSystem Bot:heart: جميع الحقوق محفوظة دراجون بوت')  
-      .addField('سيرفر الدعم الفني', `  https://discord.gg/SFY3F2g  `)
+      .setFooter('©جميع الحقوق محفوظة اوتشيها بوت')  
+      .addField('سيرفر الدعم الفني', `  None  `)
   message.author.send({embed});
 
  }
@@ -910,8 +909,8 @@ client.on('message', message => {
  
   .setColor("#FF0000")
   .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
-                 .setFooter(` DragonSystem Bot
- .`, 'https://b.top4top.net/p_6021qh431.jpg')
+                 .setFooter(` UchihaSystem Bot
+ .`, 'https://e.top4top.io/p_1530wnzmj1.jpg')
 
   message.channel.sendEmbed(embed);
     }
@@ -1316,7 +1315,7 @@ if (command == "غرد") {
     .setColor('RANDOM')
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .setDescription(args.join(" "))
-    .setFooter('© . :AG || Copyright')
+    .setFooter('© . :UC || Copyright')
     msg.channel.sendEmbed(embed);
     msg.delete();
   }
@@ -1409,7 +1408,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "© DragonSystem Bot ™."
+          text: "© UchihaSystem Bot ™."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -1739,7 +1738,7 @@ if(!gg) return;
 if(gg) {
 gg.send({embed : new Discord.RichEmbed()
 .setDescription(`**  الأيدي :question:  : \n ${lan}\nالمميزات :link: :\n ${md} \nعدد السيرفرات والمستخدمين :question: :\n ${br}  \nتم التقديم بواسطة  : <@${message.author.id}> **`)  
-          .setFooter(`Dragon Bot List.`)
+          .setFooter(`Uchiha Bot List.`)
 .setTimestamp()
 });
 }        
@@ -1854,7 +1853,7 @@ client.on('message' , message => {
         .setColor("RANDOM")
         .setTitle('**●Unban** !')
         .addField('**●User Unban :** ', `${user}` , true)
-        .addField('**●By :**' ,       ` <@${message.author.id}> ` , true)
+        .addField('**●By :*UchihaServer*' ,       ` <@${message.author.id}> ` , true)
         .setAuthor(message.guild.name)
         message.channel.sendEmbed(embed)
     }
@@ -1865,14 +1864,14 @@ client.on('message' , message => {
 
 
 client.on('ready', () => {
-     client.user.setActivity("By DragonBoy Type /help ",{type: '4'});
+     client.user.setActivity("By UchihaServer Type /help ",{type: '4'});
 
 });
 
 
 client.on('message', msg => {
 if(msg.content === 'شباب')
-msg.reply('نعم عاوز اه')
+msg.reply('ارحب البوت في خدمتك')
 });
 
 
@@ -1935,7 +1934,7 @@ client.on('message', message => {
   if(message.content === '/support') {
   const embed = new Discord.RichEmbed()
   .setTitle('Click here')
-  .setURL('https://discord.gg/3T3NDsy')
+  .setURL('https://discord.gg/nV8epxY')
   .setColor('RANDOM')
   message.channel.send({embed: embed});
   }
@@ -1971,7 +1970,7 @@ let args = message.content.split(' ').slice(1).join(' ');
 client.on('ready', () => {
   
   console.log('---------------');
-  console.log('Dragon Bot')
+  console.log('UchihaBot')
   console.log('---------------')
 });
 
@@ -2153,7 +2152,7 @@ client.on('message', message => {
 .addField(' عدد الاعضاء ',` [${client.users.size}] `)
 .addField('الغرف ',`[${client.channels.size}]`) 
 .addField(' البنق ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField('DT DragonBoy_YTD#1431 اسم صانع البوت')
+.addField('سيرفر البوت UchihaServer')
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -2163,7 +2162,7 @@ client.on('message' , message => {
 if (message.content === '/owner') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
-      .addField("**تم تطوير وبرمجه البوت من قبل 🔧 **","** DG | MelioDas  [DragonBoyYTD] \ #6724**")
+      .addField("**تم صنع البوت لسيرفر UchihaServer")
 .setColor('#B101FC')
   message.author.sendEmbed(embed);
     }
@@ -2318,7 +2317,7 @@ const prefix = "/";
   .addField("User:",  `[ + ${user.tag} + ]`)
   .addField("By:", `[  + ${message.author.tag} +  ]`)
   .addField("Reason:", `[ + ${reason} +  ]`)
-  client.channels.get("492825594367836160").send({embed : banembed})
+  client.channels.get("476188949291991060").send({embed : banembed})
 }
 });
 
